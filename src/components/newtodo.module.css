@@ -1,0 +1,86 @@
+.form {
+  width: 50%;
+  background-color: #222;
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.form-field {
+  display: flex;
+  margin: 1rem auto;
+}
+
+.form-field label {
+  flex-basis: 20%;
+  margin: auto;
+}
+
+.form-field input {
+  flex-basis: 80%;
+  border-radius: 0.6rem;
+  outline: none;
+  padding: 0.3rem;
+}
+
+.form-field textarea {
+  flex-basis: 80%;
+  resize: none;
+  border-radius: 0.6rem;
+  outline: none;
+  padding: 0.3rem;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  outline: none;
+  padding: 0.4rem;
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background-color: orange;
+  color: white;
+}
+
+@media screen and (max-width: 1124px) {
+  .form-field label {
+    font-size: 0.8rem;
+    font-weight: bolder;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .form {
+    width: 80%;
+  }
+  .form-field label {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 533px) {
+  button[type="submit"] {
+    font-size: 0.7rem;
+  }
+  .form-field {
+    margin: 0.9rem auto;
+  }
+  .form-field label {
+    flex-basis: 10%;
+    font-size: 0.8rem;
+    margin: auto;
+  }
+  .form-field input {
+    flex-basis: 90%;
+  }
+  .form-field textarea {
+    flex-basis: 90%;
+  }
+}

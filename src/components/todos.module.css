@@ -1,0 +1,14 @@
+.todos {
+  width: 50%;
+  background-color: #222;
+  padding: 0.6rem;
+  height: 60vh;
+  overflow: scroll;
+  border-radius: 0.6rem;
+}
+
+@media screen and (max-width: 992px) {
+  .todos {
+    width: 80%;
+  }
+}
